@@ -1,0 +1,56 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="source\1.png" />
+    <None Remove="source\10.png" />
+    <None Remove="source\2.png" />
+    <None Remove="source\3.png" />
+    <None Remove="source\4.png" />
+    <None Remove="source\5.png" />
+    <None Remove="source\6.png" />
+    <None Remove="source\7.png" />
+    <None Remove="source\8.png" />
+    <None Remove="source\9.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="source\1.png" />
+    <EmbeddedResource Include="source\10.png" />
+    <EmbeddedResource Include="source\2.png" />
+    <EmbeddedResource Include="source\3.png" />
+    <EmbeddedResource Include="source\4.png" />
+    <EmbeddedResource Include="source\5.png" />
+    <EmbeddedResource Include="source\6.png" />
+    <EmbeddedResource Include="source\7.png" />
+    <EmbeddedResource Include="source\8.png" />
+    <EmbeddedResource Include="source\9.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Data.SQLite" Version="1.0.117" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>

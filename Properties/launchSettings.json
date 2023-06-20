@@ -1,0 +1,11 @@
+{
+  "profiles": {
+    "ThinFilmCapacitorDesign": {
+      "commandName": "Project"
+    },
+    "Профиль 1": {
+      "commandName": "Executable",
+      "executablePath": "C:\\Users\\Максим\\Desktop\\ThinFilmCapacitorDesign\\ThinFilmCapacitorDesign\\DatabaseManager.cs"
+    }
+  }
+}
